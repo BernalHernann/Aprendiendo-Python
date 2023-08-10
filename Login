@@ -1,0 +1,26 @@
+Username=input('Cree su Nombre de usuario: ')
+Usernameinput=Username.lower()
+print (f'Tu nombre de usuario es {Usernameinput}')
+Userkey=input('Cree su nueva contraseña: ')
+Userkey2=input('Repita su contraseña: ')
+Userkeycount= len(Userkey)
+while Userkey!=Userkey2:
+    print('Las contraseñas son distintas, Intente nuevamente') 
+    Userkey=input('Cree su nueva contraseña: ')
+    Userkey2=input('Repita su contraseña: ')
+
+print('Contraseña Aceptada')
+
+Users= {Usernameinput,}
+password=Userkey
+
+intento=input('Ingrese su Usuario: ')
+while intento!=Usernameinput:
+    intento=input('Usuario Incorrecto, Ingrese su Usuario: ')
+print ('Usuario Correcto')
+intento_p=input('Ingrese su Contraseña: ')
+while intento_p!=Userkey:
+    intento_p=input('Contraseña Incorrecta, Ingrese su Contraseña: ')
+print ('Bienvenido')
+
+#realizando login de usuario
